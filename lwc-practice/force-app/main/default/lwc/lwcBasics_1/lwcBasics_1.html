@@ -1,0 +1,46 @@
+<template>
+    <lightning-card variant="narrow">
+        <!-- Kabab styling case is hypen - between the name example lightning-card -->
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Hello
+        </h3>
+        <div slot="footer">
+            1. binding a property to HTML <br/>
+            2. binding an input to a property<br/>
+            3. 
+    
+        </div>
+        <p class="slds-p-horizontal_large">
+            1. {message}!
+            <br/>
+
+            2. {inputmessage}
+            <lightning-input label="Message" value={inputmessage} onchange={handleChange}></lightning-input>
+            <br/>
+
+            3.        
+            <lightning-input label="First Name" name="firstName" value={firstName} onchange={handleChange}></lightning-input>
+            <lightning-input label="Last Name" name="lastName" value={lastName} onchange={handleChange}></lightning-input>
+            Lower Case Full Name {lowercasedFullName}
+        </p>
+            <br/>
+          
+            4.
+            Iterate Contacts in a List
+            <ul class="slds-m-around_medium">
+                <template for:each={contacts} for:item="contact">
+                    <li key={contact.Id}>
+                        {contact.Name}, {contact.Title}
+                    </li>
+                </template>
+
+            </ul>
+            <br/>
+            5.
+            <lightning-input label="Visibility Checkbox" type="checkbox" name="visiblityCheckbox" value={isVisible} onchange={handleChange}></lightning-input>
+            <div if:true={isVisible}>Showing this when Visibility checkbox is checked</div>
+            <div if:false={isVisible}>Showing this when Visibility checkbox is unchecked</div>
+       
+    </lightning-card>
+</template>

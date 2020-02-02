@@ -2,7 +2,14 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/lwcBasics_1": [
+                "lwcBasics_1/lwcBasics_1.js"
+            ],
+            "c/wireservice_2": [
+                "wireservice_2/wireservice_2.js"
+            ]
+        }
     },
     "include": [
         "**/*",
