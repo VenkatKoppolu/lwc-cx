@@ -1,10 +1,27 @@
 {
   "orgName": "venkatkoppolu Company",
   "edition": "Developer",
-  "features": [],
+  "country": "US",
+  "language": "EN",
+  "features": [
+      "API",
+      "Communities",
+      "CustomerSelfService",
+      "Sites",
+      "DefaultWorkflowUser" 
+  ],
   "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
-    }
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+      },
+      "chatterSettings": {
+          "enableChatter": true
+      },
+      "languageSettings": {
+          "enableTranslationWorkbench": true
+      },
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      }
   }
 }
